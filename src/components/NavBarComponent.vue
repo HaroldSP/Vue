@@ -15,6 +15,9 @@
       <li class="header__item">
         <router-link to="/contact-form">Contact us</router-link>
       </li>
+      <!-- <li class="header__item">
+        <router-link to="/thanks-page">Thanks</router-link>
+      </li> -->
     </ul>
   </header>
 </template>
