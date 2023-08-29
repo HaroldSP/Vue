@@ -13,7 +13,7 @@
         <router-link to="/goods-page">For your pleasure</router-link>
       </li>
       <li class="header__item">
-        <a href="./contacts.html">Contact us</a>
+        <router-link to="/contact-form">Contact us</router-link>
       </li>
     </ul>
   </header>
