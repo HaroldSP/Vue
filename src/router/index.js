@@ -4,7 +4,7 @@ import HeroView from '../views/HeroView';
 import OurCoffee from '../views/OurCoffee';
 import GoodsPage from '../views/GoodsPage';
 import ContactForm from '../views/ContactForm';
-// import ThanksPage from '../views/ThanksPage';
+import ThanksPage from '../views/ThanksPage';
 
 Vue.use(VueRouter);
 
@@ -13,7 +13,7 @@ const routes = [
   { path: '/our-coffee', component: OurCoffee },
   { path: '/goods-page', component: GoodsPage },
   { path: '/contact-form', component: ContactForm },
-  // { path: '/thanks-page', component: ThanksPage },
+  { path: '/thanks-page', component: ThanksPage },
 ];
 
 const router = new VueRouter({
