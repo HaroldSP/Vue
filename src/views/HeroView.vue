@@ -60,44 +60,13 @@
           <div class="col-lg-10 offset-lg-1">
             <div class="best__wrapper">
               <product-card
+                v-for="card in bestsellers"
                 classItem="best__item"
-                :name="bestsellers[0].name"
-                :price="bestsellers[0].price"
-                :image="bestsellers[0].image"
+                :key="card.id"
+                :name="card.name"
+                :price="card.price"
+                :image="card.image"
               />
-              <product-card
-                classItem="best__item"
-                :name="bestsellers[1].name"
-                :price="bestsellers[1].price"
-                :image="bestsellers[1].image"
-              />
-              <product-card
-                classItem="best__item"
-                :name="bestsellers[2].name"
-                :price="bestsellers[2].price"
-                :image="bestsellers[2].image"
-              />
-              <!-- <div class="best__item">
-                <img src="@/assets/img/coffee-1.jpg" alt="coffee">
-                <div class="best__item-title">
-                  Solimo Coffee Beans 2kg
-                </div>
-                <div class="best__item-price">10.73$</div>
-              </div>
-              <div class="best__item">
-                <img src="@/assets/img/coffee-2.jpg" alt="coffee">
-                <div class="best__item-title">
-                  Presto Coffee Beans 1kg
-                </div>
-                <div class="best__item-price">15.99$</div>
-              </div>
-              <div class="best__item">
-                <img src="@/assets/img/coffee-3.jpg" alt="coffee">
-                <div class="best__item-title">
-                  AROMISTICO Coffee 1kg
-                </div>
-                <div class="best__item-price">6.99$</div>
-              </div> -->
             </div>
           </div>
         </div>
