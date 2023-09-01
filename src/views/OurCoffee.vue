@@ -73,10 +73,10 @@
                 v-for="card in coffee"
                 classItem="shop__item"
                 :key="card.id"
-                :name="card.name"
-                :price="card.price"
-                :image="card.image"
+                :card="card"
+                @onNavigate="navigate"
               />
+              <!-- /our-coffee/item -->
             </div>
           </div>
         </div>
@@ -88,6 +88,7 @@
 <script>
 import NavBarComponent from '@/components/NavBarComponent.vue';
 import ProductCard from '@/components/ProductCard.vue';
+import { navigate } from '../mixins/navigate';
 
 export default {
   components: { NavBarComponent, ProductCard },
@@ -96,5 +97,11 @@ export default {
       return this.$store.getters['getCoffee'];
     },
   },
+  data() {
+    return {
+      name: 'coffee',
+    };
+  },
+  mixins: [navigate],
 };
 </script>
