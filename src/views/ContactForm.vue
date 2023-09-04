@@ -120,6 +120,13 @@ export default {
   methods: {
     submit() {
       console.log(this.form);
+      fetch('http://localhost:3000/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(this.form),
+      });
     },
   },
 };
